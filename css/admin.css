@@ -1,0 +1,382 @@
+:root
+{
+    --order: 1;
+}
+*{
+    margin: auto;
+    padding: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper{
+    
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.text-center{
+    text-align: center;
+}
+/*footer*/
+
+.footer{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+.footer a{
+text-decoration:none;
+font-weight: bolder;
+color: black;
+}
+.📜{
+    border-bottom: none;
+    background-color: none;
+    
+}
+.📜 ul
+{
+    list-style-type: none;
+
+}
+.📜 ul li{
+    padding: 1%;
+
+    display: inline;
+
+}
+.📜 ul li a:hover{
+    color:gray;
+}
+.📜 ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+/*css for main content*/
+.main-content{
+    padding: 3% 0%;
+    background-color: none;
+}
+.topic{
+    color: aliceblue;
+
+}
+.col-4
+
+{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    
+        -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+    
+}
+.tbl-full
+{
+    
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.329);
+}
+.tbl-antifull{
+    display: grid;
+}
+.tbl-full td{
+    color: black,white ;
+    margin: auto;
+    border: 70;
+    margin: 80;
+    justify-content: center;
+    align-items: justify;
+}
+.tbl-full th,td{
+    padding: auto;
+    color: black,white ;
+    margin: auto;
+}
+
+
+
+table tr th{
+    font-weight: 1000;
+    font-style: oblique;
+    border-bottom: none;
+    margin: 3%;
+    text-align: left;
+}
+table tr td{
+    padding: 1%;
+    text-align: center;
+}
+.btn-primary
+{
+    background-color: #1e90ff;
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.btn-primary:hover{
+background-color: #70a1ff
+}
+.btn-secondary
+{
+    background-color: #2ed573;
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.btn-secondary:hover{
+background-color:#7bed9f
+}
+.btn-danger
+{
+    background-color:#ff4757;
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.btn-danger:hover{
+background-color: #ff6b81
+}
+.tbl-30
+{
+    width: 30%;
+}
+.success
+{
+    color: #2ed573;
+}
+.error
+{
+    color: #ff4757;
+}
+.login
+{
+    width: 30%;
+    border: none;
+    margin: 10% auto;
+    padding: 2%;
+    background: linear-gradient(to left,rgba(0, 0, 255, 0.137), rgba(255, 0, 0, 0.137) );
+    color: white;
+}
+.login a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+/*body{
+    background-image: url('../images/bg.jpg');}*/
+
+/*body background-image{
+    opacity: (0.465);
+}*/
+body {
+    min-height: max-content;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, red, blue, purple,red);
+    background-size: stretch;
+    }
+    .floatingtable
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        text-align: left;
+      /*background: linear-gradient(to left, red , blue);*/
+      border: none;
+      align-content: center;
+      padding-top: 30;
+      padding-right: 30;
+      border: 700;
+      color: white;
+      font-weight: bold;
+    }
+    .📦{
+        border: 10;
+        border-radius: 12px;
+        margin :10;
+        padding: 5px;
+    }
+    .✅
+    {
+        border-radius: 25px;
+        padding: 10;
+    }
+    .memimg
+    {
+        max-width: 100px;
+        /*aspect-ratio: 16/9;*/
+    }
+    .grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 500px 1fr;
+        grid-template-rows: 100px 200px;
+        place-items: center;
+    }
+    .grid .idimg
+    {
+        max-width: 1200px;
+        max-height: 300px;
+        /*max-height: 150px;*/
+    }
+    .idimg +.idimg
+    {
+        margin: left 3%; ;
+    }
+    table {
+        table-layout: fixed;
+    
+    }
+
+    @media screen and (max-width: 700px) {
+        th{
+            display: none;
+        }
+        td{
+            display: block;
+            padding: 0.5vh;
+            margin: none;
+            border: none;
+        }
+        td:first-child{
+            display: none;
+        }
+        .MemberNo
+        {
+            display: none;
+        }
+        .MemberName
+        {
+            font-weight: 1000;
+            font-size: xx-large;
+        }
+        .profile
+        {
+            display: grid;
+        }
+
+    }
+    
+   .wide
+   {
+    padding: 25px;
+    margin: auto;
+    font-size: 24pt;
+   }
+
+   .loan-buttons
+   {
+    display: grid;
+ padding-left: 175px;
+ padding-right: 175px;
+
+   }
+   .loan-buttons .btn-secondary
+   {
+       background: linear-gradient(to right, blue, red);
+   }
+.drop
+  {
+      animation: fadeInAnimation 0.0001s ease forwards;
+  }
+  @keyframes dropIn{
+      from{transform:translateY(-500px);}
+      to{transform: translateY(0);}
+  }
+  .sierra
+{
+    animation-delay:100ms ;
+}
+.hotel
+{
+    animation-delay:200ms ;
+}
+.echo
+{
+    animation-delay:300ms;
+}
+.india
+{
+    animation-delay:400ms ;
+}
+.lima
+{
+    animation-delay:500ms ;
+}
+.delta
+{
+    animation-delay:600ms ;
+}
+
+table {
+    animation: fadeInAnimation ease 0.000003s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.bold
+{
+    font-weight: 700;
+}
+.left
+{
+    text-align: left;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.greeting{
+text-align: left;
+padding-left: 25%;
+
+}
+.greeting p
+{
+ font-size: large;
+}
+.tbl-antifull th{ 
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+}
+.avatar{
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+}
+.profile
+{
+    text-align: left;
+}
+.profilebutton a
+{
+    text-decoration: none;
+}
+.profileavatar
+{
+    border-radius: 50%;
+    max-width: 300px;
+}
